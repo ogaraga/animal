@@ -1,0 +1,122 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    background-color: aqua;
+
+    .mox{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        h1{
+            z-index: 1;
+            color: black;
+            font-size: 20px;
+            margin-left:30%;
+            margin-right: 10%;
+            top: 20px;
+            position: absolute;
+            &:hover{
+                color: darkgreen;
+            }
+            animation: textup 4s linear infinite;
+            transform: translateY(100%);
+
+            @keyframes textup{
+                0%{
+                    transform: translateY(100%);
+                    width: 100%;
+                }
+                100%{
+                    transform: translateY(0%);
+                    height: 100%;
+                }
+            }
+
+        }
+
+        p{
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            color: crimson;
+            font-size: 25px;
+            font-weight: bold;
+            margin-left:25%;
+            margin-right: 10%;
+            top: 50px;
+            &:hover{
+                color: white;
+            }
+            animation: textside 8s linear infinite;
+            transform: translateX(50%);
+
+            @keyframes textside{
+                0%{
+                    transform: translateX(100%);
+                }
+                100%{
+                    transform: translateX(-100%);
+                }
+            }
+        }
+            img{
+                width: 100%;
+                height: 100%;
+                animation: zoom-out 4s linear infinite;
+                transform: translateY(-50%, 70%);
+                transform: translateX(-50%, 70%);
+
+
+                @keyframes zoom-out{
+                   40%{
+                        height: 10%;
+                    }
+                    10%{
+                        width: 100%;
+                    }
+                }
+            }
+    }
+
+    .gox{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-style: italic;
+        width: 100%;
+
+        p{
+        font-size: 20px;
+        position: absolute;
+        bottom: -600px;
+        left: 300px;
+        animation: textside 6s linear infinite;
+        transform: translateX(50%);
+
+        @keyframes textside{
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+
+        &:hover{
+            color: black;
+        }
+        
+         }
+     }
+    }
