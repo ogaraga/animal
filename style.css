@@ -20,7 +20,7 @@ body .mox h1 {
   z-index: 1;
   color: black;
   font-size: 20px;
-  margin-left: 30%;
+  margin-left: 50%;
   margin-right: 10%;
   top: 20px;
   position: absolute;
@@ -38,6 +38,13 @@ body .mox h1:hover {
   100% {
     transform: translateY(0%);
     height: 100%;
+  }
+}
+@media screen {
+  body .mox h1 {
+    width: auto;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 }
 body .mox p {
